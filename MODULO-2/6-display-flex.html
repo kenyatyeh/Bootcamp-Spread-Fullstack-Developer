@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 3px solid lightskyblue;
+        }
+
+        .item{
+            background-color: lightblue;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            border: 2px solid rgb(155, 155, 16);
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>strech</p>
+    <div class="container stretch">
+        <div class="item">Ser homem é ser responsável.</div>
+        <div class="item">Ser homem é ser responsável. É sentir...</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo.</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">Ser homem é ser responsável</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+    </div>
+    
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Ser homem é ser responsável.</div>
+        <div class="item">Ser homem é ser responsável. É sentir...</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo.</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">Ser homem é ser responsável</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+    </div>
+    
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Ser homem é ser responsável.</div>
+        <div class="item">Ser homem é ser responsável. É sentir...</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo.</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">Ser homem é ser responsável</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+    </div>
+    
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Ser homem é ser responsável.</div>
+        <div class="item">Ser homem é ser responsável. É sentir...</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo.</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">Ser homem é ser responsável</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+    </div>
+    
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Ser homem é ser responsável.</div>
+        <div class="item">Ser homem é ser responsável. É sentir...</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo.</div>
+        <div class="item">Ser homem é ser responsável.</div>
+        <div class="item">É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">Ser homem é ser responsável</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+    </div>
+    
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Ser homem é ser responsável.</div>
+        <div class="item">Ser homem é ser responsável. É sentir...</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo.</div>
+        <div class="item">Ser homem é ser responsável.</div>
+        <div class="item">É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+        <div class="item">Ser homem é ser responsável</div>
+        <div class="item">Ser homem é ser responsável. É sentir que colabora na construção do mundo. - Pequeno Príncipe.</div>
+    </div>
+
+   
+</body>
+</html>
